@@ -1,4 +1,4 @@
-/*! Lity - v3.0.0-dev - 2019-08-07
+/*! Lity - v3.0.0-dev - 2019-09-09
 * http://sorgalla.com/lity/
 * Copyright (c) 2015-2019 Jan Sorgalla; Licensed MIT */
 (function(window, factory) {
@@ -14,7 +14,7 @@
 }(typeof window !== "undefined" ? window : this, function(lity) {
     'use strict';
 
-    var _regex = /(youtube(-nocookie)?\.com|youtu\.be)\/(watch\?v=|v\/|u\/|embed\/?)?([\w-]{11})(.*)?/i;
+    var _regex = /(youtube(-nocookie)?\.com|youtu\.be)\/(watch\?v=|v\/|u\/|embed\/?)?([\w-]{11})\??(.*)?/i;
 
     lity.handlers('youtube', function(target, instance) {
         var matches = _regex.exec(target);
